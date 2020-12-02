@@ -10,6 +10,7 @@ import Foundation
 public struct BaseResponse<T> {
     let status: Status
     let data: T
+    let code: Int
 }
 
 public enum Status: String, Decodable {
