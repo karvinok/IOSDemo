@@ -28,7 +28,6 @@ class RestController {
             } else {
                 do {
                     let responseBody = try JSONDecoder().decode(T.self, from: data!)
-                    //let decodedData: [T] = try! JSONDecoder().decode([T].self, from: data)
                     DispatchQueue.main.async {
                         result(.success(responseBody))
                     }
